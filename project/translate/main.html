@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="style-main.css">
+    <script src="java-main.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div onclick="location.href='./main.html';" class="logo"><p style="font-size:65px; color: aliceblue; margin: 0 0 0 0;">🧪</p></div>
+        <div class="headerbuttons">
+            <div onclick="location.href='../MAIN/main.html';" class="hed1" title="Главная страница">&nbsp;</div>
+            <div onclick="location.href='../translate/main.html';" class="hed2" title="Переводчик">&nbsp;</div>
+            <div onclick="location.href='../zadachi/main.html';" class="hed3" title="Задачи">&nbsp;</div>
+            <div onclick="location.href='../null/main.html';" class="hed4" title=":/">&nbsp;</div>
+        </div>
+
+        <!-- <div class="themes">
+            <button class="themebutton">
+                <p class="themesP"></p><img src="arrw.svg" alt="arrow lol" class="arrow">
+            </button>
+        </div> -->
+    </header>
+
+    <div class="divheads">
+        <div id="name"><p>Имя соединения</p></div>
+        <div id="id"><p>Формула</p></div>
+    </div>
+    <div class="divwindows">
+        <div class="text-area">
+            <div class="textareadiv">
+                <textarea id="leftwin" placeholder="Введите формулу..."></textarea>
+            </div>
+            <button onclick="clearLogs()" id="clear"></button>
+            <div class="clearlines">
+                <div class="clear-line-1"></div>
+                <div class="clear-line-2"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="switchbutton" onclick="switchmodes()">↺ Поменять</button>
+            <button class="runbutton" onclick="docID()">⇨ Запустить</button>
+        </div>
+
+        <div class="rightwin">
+            <p id="PInRightwin"></p>
+        </div>
+    </div>
+
+    <div class="yellowline"></div>
+
+    <div class="rest-base">
+        <div class="rest-head">
+            <div class="spravka-head"><p>Справка</p></div>
+            <div class="properties-head"><p>Признаки </p></div>
+        </div>
+
+        <div class="current-properties-base">        
+            <div class="spravka">
+                <p id="spravkaP"></p>
+            </div>
+            <div class="current-properties">
+                <p id="propsP"></p>
+                <ul>
+                    <li id="1"></li>
+                    <li id="2"></li>
+                    <li id="3"></li>
+                    <li id="4"></li>
+                    <li id="5"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <p class="a">лол</p> -->
+    
+</body>
+</html>

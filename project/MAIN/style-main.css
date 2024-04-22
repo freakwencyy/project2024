@@ -1,0 +1,373 @@
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    /* background-color: #fcfcfc; */
+    background-color: #1e1e1e;
+    color: aliceblue;
+}
+
+header {
+    z-index: 99;
+    position:sticky;
+    top: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 120px;
+    /* background-color: rgb(239, 239, 239); */
+    /* background-color: #e1e1e2; */
+    background-color: #3c3c3c;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 15px #000000;
+    /* box-shadow: 0px 0px 8px #a3a3a3; */
+}
+
+.headerbuttons {
+    height: 100px;
+    width: 60%;
+    /* margin: 10px 0 10px 0; */
+    padding: 0 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: #00ff51; */
+}
+
+.hed1,
+.hed2,
+.hed3,
+.hed4 {
+    height: 82px;
+    width: 90px;
+    /* margin-bottom: 20px; */
+}
+
+.logo {
+    /* background-color: #ffbe45; */
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+}
+
+@keyframes headbuttonsout {
+    0% {
+        transform: translate(-3px, -3px);
+        /* transform: translateY(-4px);
+        transform: translateX(-4px); */
+        /* transform: rotate(-0.02turn); */
+    }
+    100% {
+        transform: translate(0, 0);
+        /* transform: translateY(0); */
+        /* transform: translateX(0); */
+        /* transform: rotate(0); */
+    }
+}
+
+.hed1,
+.hed2,
+.hed3,
+.hed4 {
+    background: linear-gradient(to bottom, rgb(75, 85, 174), rgb(74, 96, 196));
+    clip-path: polygon(78% 0, 100% 50%, 78% 100%, 22% 100%, 0% 50%, 22% 0%);
+    animation: headbuttonsout 0.4s;
+    cursor: pointer;
+    /* transition: transform 0.5s; */
+    /* transition: background-color 0.5s; */
+
+}
+
+@keyframes headbuttons {
+    0% {
+        transform: translate(0, 0);
+        /* transform: rotate(0); */
+    }
+    100% {
+        transform: translate(-3px, -3px);
+        /* transform: translateX(-4px); */
+        /* transform: rotate(-0.02turn); */
+    }
+}
+
+.hed1:hover,
+.hed2:hover,
+.hed3:hover,
+.hed4:hover {
+    animation: headbuttons 0.2s forwards;
+    /* transform: rotate(-0.02turn), translateX(-5px); */
+    /* background-color: rgb(48, 49, 149); */
+    /* transition: background-color 0.5s; */
+    /* background-color: rgb(48, 49, 149); */
+}
+
+.base-base {
+    margin-top: 15px;
+    margin-left: 10%;
+    align-self: center;
+    width: 80%;
+    /* height: 800px; */
+    /* background-color: orange; */
+}
+
+.yellowline {
+    height: 3px;
+    width: 94%;
+    background-color: #ffbe45;
+    margin: 50px 3% 50px 3%;
+    box-shadow: 0 0 15px #000000;
+}
+
+.base {
+    height: 500px;
+    width: 100%;
+    background: rgb(87,51,214);
+    background: linear-gradient(90deg, rgb(119, 65, 227) 38%, rgb(76, 48, 178) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    border-radius: 8px;
+}
+
+.text-base {
+/* .text-sec,
+.text-thi,
+.text-fou,
+.text-conclusion { */
+    height: 470px;
+    width: calc(100% - 30px);
+    /* background-color: orange; */
+    margin-left: 15px;
+    background-color: #3c3c3c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-base-text {
+    width: 53%;
+    height: 300px;
+    /* background-color: orange; */
+    margin: 25px 0 0 25px;
+    
+}
+
+.base-h2 {
+    font-size: 33px;
+}
+
+.base-p {
+    font-size: 20px;
+}
+
+.base-img {
+    height: calc(100% - 25px);
+    width: 470px;
+    margin: 12px 12px 0 0;
+    border-radius: 15px;
+    /* box-shadow: 0 0 15px #a3a3a3; */
+}
+
+.base-button {
+    width: 200px;
+    height: 70px;
+    background-color: #2e71dd;
+    font-size: 25px;
+    color: #fff;
+    border: #325dc1 5px solid;
+    box-shadow: 0 0 15px #a3a3a3;
+    margin: 30px 0 0 25px;
+    cursor: pointer;
+    animation: basebuttonsout 0.3s forwards;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+@keyframes basebuttonsout {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 15px #1d1d1d;
+    }
+}
+
+.base-button:hover {
+    animation: basebuttons 0.3s forwards /*, infinity 3s  infinite*/;
+}
+
+@keyframes basebuttons {
+    0% {
+        box-shadow: 0 0 15px #1d1d1d;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+/* finish this */
+
+/* @keyframes infinity {
+    0% { transform: translate(0, 0); }
+    12.5% { transform: translate(3px, -3px); }
+    25% { transform: translate(3px, 3px); }
+    37.5% { transform: translate(-3px, 3px); }
+    50% { transform: translate(-3px, -3px); }
+    62.5% { transform: translate(-3px, -3px); }
+    75% { transform: translate(-3px, 3px); }
+    87.5% { transform: translate(3px, 3px); }
+    100% { transform: translate(3px, -3px); }
+} */
+
+.base-button:after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+}
+  
+  /*---
+    hover trigger
+  ---*/
+  
+.base-button:hover:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+  
+  /*---
+    active state
+  ---*/
+  
+.base-button:active:after {
+    opacity: 0;
+}
+
+.secondary {
+    height: 500px;
+    width: 100%;
+    background: rgb(78,205,48);
+    background: linear-gradient(139deg, rgba(78,205,48,1) 0%, rgba(61,184,162,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.sec-button {
+    width: 200px;
+    height: 70px;
+    background-color: #a1a1a1;
+    font-size: 25px;
+    color: #fff;
+    border: #7e7e7e 5px solid;
+    box-shadow: 0 0 15px #a3a3a3;
+    margin: 30px 0 0 25px;
+    cursor: pointer;
+    animation: basebuttonsout 0.3s forwards;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+@keyframes basebuttonsout {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 15px #1d1d1d;
+    }
+}
+
+.sec-button:hover {
+    animation: basebuttons 0.3s forwards /*, infinity 3s  infinite*/;
+}
+
+@keyframes basebuttons {
+    0% {
+        box-shadow: 0 0 15px #1d1d1d;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+/* finish this */
+
+/* @keyframes infinity {
+    0% { transform: translate(0, 0); }
+    12.5% { transform: translate(3px, -3px); }
+    25% { transform: translate(3px, 3px); }
+    37.5% { transform: translate(-3px, 3px); }
+    50% { transform: translate(-3px, -3px); }
+    62.5% { transform: translate(-3px, -3px); }
+    75% { transform: translate(-3px, 3px); }
+    87.5% { transform: translate(3px, 3px); }
+    100% { transform: translate(3px, -3px); }
+} */
+
+.sec-button:after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+}
+  
+  /*---
+    hover trigger
+  ---*/
+  
+.sec-button:hover:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+  
+  /*---
+    active state
+  ---*/
+  
+.sec-button:active:after {
+    opacity: 0;
+}
